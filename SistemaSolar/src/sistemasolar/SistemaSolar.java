@@ -57,7 +57,7 @@ public class SistemaSolar extends Application {
  	private Satelite lunaU3;
 
 	private Satelite neptuno;
-	private Satelite pluton;
+	//private Satelite pluton;
 
 	public static int getSolCentroX() {
 	    return ANCHO_VENTANA_INICIAL/2;
@@ -72,7 +72,7 @@ public class SistemaSolar extends Application {
 	 * alrededor de quien.
 	 */
 	private void creaAstros() {
-		sol = new Astro(RADIO_SOL);
+		sol = new Astro(RADIO_SOL,"https://cdn.ghanaweb.com/imagelib/pics/14998505.jpg");
 		mercurio = new Satelite(Satelite.DatosSatelite.MERCURIO , sol);
 		venus = new Satelite(Satelite.DatosSatelite.VENUS, sol);
 
@@ -114,8 +114,8 @@ public class SistemaSolar extends Application {
 		sol.getNodo().setLayoutX(getSolCentroX() - RADIO_SOL);
 		sol.getNodo().setLayoutY(getSolCentroY() - RADIO_SOL);
 		root.getChildren().add(sol.getNodo());
-		String fondo = "http://bf-astro.com/images/pickeringTriBig.jpg";
-		root.setStyle("-fx-background-image: url('" + fondo + "'); " + 
+		String fondo = "https://zennovember.files.wordpress.com/2015/08/tumblr-background-renaissance-blue-backgrounds-437194937.jpg";
+		root.setStyle("-fx-background-image: url('" + fondo + "'); " +
 			      "-fx-background-position: center center; " +
 			      "-fx-background-repeat: stretch;" );
 		Scene scene = new Scene(root, ANCHO_VENTANA_INICIAL, ALTO_VENTANA_INICIAL);

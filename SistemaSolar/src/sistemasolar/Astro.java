@@ -10,7 +10,11 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Sphere;
 //Para la figura
+import javafx.scene.image.Image;
+import javafx.scene.paint.PhongMaterial;
+import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.CullFace;
 
 /**
  * Clase que representa a todos los astros alrededor de los cuales pueden girar
@@ -33,12 +37,17 @@ public class Astro {
 	 * Constructor.
 	 * @param diametro Pixeles de diámetro.
 	 */
-	public Astro(double diametro) {
+	public Astro(double diametro, String textura) {
 		nodo = new StackPane();
-		//Checar ese metodo
-	//	nodo.setStyle("-fx-background-color: rgba(200, 160, 220, 0.5);");
-	//	nodo.setMaxSize(100, 100);
+
+	  nodo.setMaxSize(100, 100);
 		figura = new Sphere(diametro);
+		Image relleno = new Image (textura);
+		PhongMaterial mat = new PhongMaterial();
+      mat.setSelfIlluminationMap(relleno);
+			mat.setDiffuseMap(relleno);
+			figura.setMaterial(mat);
+
 		nodo.getChildren().add(figura);
 	}
 
