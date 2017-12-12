@@ -3,7 +3,7 @@
 <project name="Sistema Solar" default="default" basedir="."
   xmlns:fx="javafx:com.sun.javafx.tools.ant">
  
-  <property name="JAVA_HOME" value="/usr/java/default"/>
+  <property name="JAVA_HOME" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"/>
   <property name="build.src.dir" value="src"/>
   <property name="build.classes.dir" value="classes"/>
   <property name="build.dist.dir" value="dist"/>
