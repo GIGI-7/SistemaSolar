@@ -13,7 +13,13 @@ import static javafx.application.Application.launch;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.image.ImageView;
-
+import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BackgroundPosition;
+import javafx.scene.layout.BackgroundRepeat;
+import javafx.scene.layout.BackgroundSize;
 /**
  * Simulación del sistema solar utilizando JavaFX
 	 * https://docs.oracle.com/javase/8/javafx/api/index.html
@@ -54,11 +60,11 @@ public class SistemaSolar extends Application {
 	private Satelite pluton;
 
 	public static int getSolCentroX() {
-		return ANCHO_VENTANA_INICIAL/2;
+	    return ANCHO_VENTANA_INICIAL/2;
 	}
 
 	public static int getSolCentroY() {
-		return ALTO_VENTANA_INICIAL/2;
+	    return ALTO_VENTANA_INICIAL/2;
 	}
 
 	/**
@@ -105,18 +111,15 @@ public class SistemaSolar extends Application {
 	private Scene montaNodos() {
 
 		AnchorPane root = new AnchorPane();
-		root.setLayoutX(getSolCentroX() - RADIO_SOL);
-		root.setLayoutY(getSolCentroY() - RADIO_SOL);
+		sol.getNodo().setLayoutX(getSolCentroX() - RADIO_SOL);
+		sol.getNodo().setLayoutY(getSolCentroY() - RADIO_SOL);
 		root.getChildren().add(sol.getNodo());
-		//Fondo ?
-		//AQUI IRIA EL FONDO SI TUVIERA UNO
-		String fondo = "https://wallpapercave.com/wp/jnSCcKU.jpg";
-		root.setStyle("-fx-background-image: url('" + fondo + "'); " );
-
-
-
+		String fondo = "http://bf-astro.com/images/pickeringTriBig.jpg";
+		root.setStyle("-fx-background-image: url('" + fondo + "'); " + 
+			      "-fx-background-position: center center; " +
+			      "-fx-background-repeat: stretch;" );
 		Scene scene = new Scene(root, ANCHO_VENTANA_INICIAL, ALTO_VENTANA_INICIAL);
-		return scene;
+ 		return scene;
 	}
 
 	/**
@@ -127,10 +130,9 @@ public class SistemaSolar extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		creaAstros();
-
 		Scene scene = montaNodos();
 		primaryStage.setTitle("Sistema Solar :)");
-    primaryStage.setScene(scene);
+		primaryStage.setScene(scene);
 		primaryStage.show();
 
 	}
