@@ -20,6 +20,9 @@ import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import java.io.File;
 /**
  * Simulación del sistema solar utilizando JavaFX
 	 * https://docs.oracle.com/javase/8/javafx/api/index.html
@@ -136,12 +139,16 @@ public class SistemaSolar extends Application {
 	/**
 	 * Acomoda los elementos en la intefaz e inicia la animación.
 	 * @param primaryStage
-	 * @throws Exception
+	 * @throws Exceptionan
 	 */
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		creaAstros();
 		Scene scene = montaNodos();
+		Media media = new Media(new File("marcianito.wav").toURI().toASCIIString());
+		MediaPlayer player = new MediaPlayer(media);
+		player.play();
+
 		primaryStage.setTitle("Sistema Solar :)");
 		primaryStage.setScene(scene);
 		primaryStage.show();
