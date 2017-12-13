@@ -57,7 +57,12 @@ public class SistemaSolar extends Application {
  	private Satelite lunaU3;
 
 	private Satelite neptuno;
-	//private Satelite pluton;
+	private Satelite n1;
+	private Satelite n2;
+	private Satelite n3;
+	private Satelite n4;
+
+	private Satelite pluton;
 
 	public static int getSolCentroX() {
 	    return ANCHO_VENTANA_INICIAL/2;
@@ -98,6 +103,12 @@ public class SistemaSolar extends Application {
 		lunaU3 = new Satelite(Satelite.DatosSatelite.LUNAG3, urano);
 
 		neptuno = new Satelite (Satelite.DatosSatelite.NEPTUNO, sol);
+		n1 = new Satelite (Satelite.DatosSatelite.LUNA, neptuno);
+		n2 = new Satelite (Satelite.DatosSatelite.LUNAG1, neptuno);
+		n3 = new Satelite (Satelite.DatosSatelite.LUNAG2, neptuno);
+		n4 = new Satelite (Satelite.DatosSatelite.LUNAG3, neptuno);
+
+		pluton = new Satelite (Satelite.DatosSatelite.PLUTON , sol);
 
 
 

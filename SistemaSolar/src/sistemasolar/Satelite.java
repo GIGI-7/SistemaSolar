@@ -27,17 +27,20 @@ public class Satelite extends Astro {
 		MERCURIO(0.56,ESCALA_ORBITA_SATELITE *0.0056,ESCALA_ORBITA_SATELITE * 0.0056 , 0.2056, "https://main-designyoutrust.netdna-ssl.com/wp-content/uploads/2012/09/black-background-metal-texture-wallpaper-1280x720-750x421.jpg"),
 		VENUS(0.81,ESCALA_ORBITA_SATELITE*0.0081,ESCALA_ORBITA_SATELITE * 0.0081,0.8, "http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/765/thumbs/warm-amber-patterns-2.jpg"),
 		TIERRA(1.0, ESCALA_ORBITA_SATELITE*0.01, ESCALA_ORBITA_SATELITE*0.0099, 1.0, "https://svs.gsfc.nasa.gov/vis/a000000/a002900/a002915/bluemarble-1024.png"),
-		MARTE (0.7,ESCALA_ORBITA_SATELITE*0.015 ,ESCALA_ORBITA_SATELITE*0.015, .82, "http://images.all-free-download.com/images/graphiclarge/red_shading_background_05_hd_pictures_169759.jpg"),
-		JUPITER (2, ESCALA_ORBITA_SATELITE *0.03  , ESCALA_ORBITA_SATELITE* 0.03, 0.9, "http://www.todoelsistemasolar.com.ar/imagenes/jupiter-mancha-hd.jpg"),
+		MARTE (0.7,ESCALA_ORBITA_SATELITE*0.016 ,ESCALA_ORBITA_SATELITE*0.016, 1.5, "http://images.all-free-download.com/images/graphiclarge/red_shading_background_05_hd_pictures_169759.jpg"),
+		JUPITER (2, ESCALA_ORBITA_SATELITE *0.03  , ESCALA_ORBITA_SATELITE* 0.03, 1.7, "http://www.todoelsistemasolar.com.ar/imagenes/jupiter-mancha-hd.jpg"),
 		LUNAG1(0.273, ESCALA_ORBITA_SATELITE * 0.0026, ESCALA_ORBITA_SATELITE * 0.002566, 0.0739,"https://brazenbelles.files.wordpress.com/2012/01/silver_glitter.jpg"),
     LUNAG2(0.273, ESCALA_ORBITA_SATELITE * 0.0026 	, ESCALA_ORBITA_SATELITE * 0.002569, 0.08, "https://brazenbelles.files.wordpress.com/2012/01/silver_glitter.jpg"),
 		LUNAG3(0.273, ESCALA_ORBITA_SATELITE * 0.0026, ESCALA_ORBITA_SATELITE * 0.002566, 0.0939, "https://brazenbelles.files.wordpress.com/2012/01/silver_glitter.jpg"),
 		LUNAG4(0.273, ESCALA_ORBITA_SATELITE * 0.0025, ESCALA_ORBITA_SATELITE * 0.002567, 0.0639, "https://brazenbelles.files.wordpress.com/2012/01/silver_glitter.jpg"),
 
-		SATURNO (1.7,ESCALA_ORBITA_SATELITE*0.04 , ESCALA_ORBITA_SATELITE*0.04, 0.7, "https://i.pinimg.com/originals/97/fc/bf/97fcbfd754336ef5239c7427be1b4e15.jpg"),
-		URANO (1.3, ESCALA_ORBITA_SATELITE*0.05,ESCALA_ORBITA_SATELITE*0.05,0.7, "https://static.tumblr.com/e144954cdc37cbe4432fad75a75b5217/zaalm7n/z6Soltc2b/tumblr_static_tumblr_static_24zakln09bpc848k00kwsgw4s_640.jpg"),
-		NEPTUNO(1.9, ESCALA_ORBITA_SATELITE * 0.06, ESCALA_ORBITA_SATELITE*0.06,0.6, "http://t.motionelements.com/stock-video/science-technology/me1651289-electric-background-abstract-animation-hd-a0120-poster.jpg");
+		SATURNO (1.7,ESCALA_ORBITA_SATELITE*0.04 , ESCALA_ORBITA_SATELITE*0.04, 1.9 , "https://i.pinimg.com/originals/97/fc/bf/97fcbfd754336ef5239c7427be1b4e15.jpg"),
+		URANO (1.3, ESCALA_ORBITA_SATELITE*0.05,ESCALA_ORBITA_SATELITE*0.05,1.999, "https://static.tumblr.com/e144954cdc37cbe4432fad75a75b5217/zaalm7n/z6Soltc2b/tumblr_static_tumblr_static_24zakln09bpc848k00kwsgw4s_640.jpg"),
+		NEPTUNO(1.9, ESCALA_ORBITA_SATELITE * 0.06, ESCALA_ORBITA_SATELITE*0.06,2.0, "http://t.motionelements.com/stock-video/science-technology/me1651289-electric-background-abstract-animation-hd-a0120-poster.jpg"),
 		//LUNA_LUNA(0.17, (ESCALA_ORBITA_SATELITE * 0.00257)/2.1, (ESCALA_ORBITA_SATELITE * 0.002566)/2.1, 0.036);
+//		MARTE (0.7,ESCALA_ORBITA_SATELITE*0.019 ,ESCALA_ORBITA_SATELITE*0.015, 1.5, "http://images.all-free-download.com/images/graphiclarge/red_shading_background_05_hd_pictures_169759.jpg"),
+
+		PLUTON(1.0,ESCALA_ORBITA_SATELITE * 0.07 , ESCALA_ORBITA_SATELITE*0.07, 1.5, "http://outletminero.org/content/images/2016/02/TUBOS-DE-COBRE.jpg");
 		;
 
 		private final double diametroEcuatorial;

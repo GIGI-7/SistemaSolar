@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SistemaSolar.jnlp">
+  <information>
+    <title>Sistema Solar</title>
+    <vendor>Facultad de Ciencias, UNAM</vendor>
+    <description>JavaFXSistemaSolarApp</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SistemaSolar.jar" size="9121" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="300" height="250" main-class="sistemasolar.SistemaSolar"  name="JavaFXSistemaSolarApp" />
+  <update check="background"/>
+</jnlp>
