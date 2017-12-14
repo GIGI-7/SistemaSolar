@@ -37,7 +37,7 @@ public class Satelite extends Astro {
 		SATURNO (1.7,ESCALA_ORBITA_SATELITE*0.04 , ESCALA_ORBITA_SATELITE*0.04, 1.9 , "https://i.pinimg.com/originals/97/fc/bf/97fcbfd754336ef5239c7427be1b4e15.jpg"),
 		URANO (1.3, ESCALA_ORBITA_SATELITE*0.05,ESCALA_ORBITA_SATELITE*0.05,1.999, "https://static.tumblr.com/e144954cdc37cbe4432fad75a75b5217/zaalm7n/z6Soltc2b/tumblr_static_tumblr_static_24zakln09bpc848k00kwsgw4s_640.jpg"),
 		NEPTUNO(1.9, ESCALA_ORBITA_SATELITE * 0.06, ESCALA_ORBITA_SATELITE*0.06,2.0, "http://t.motionelements.com/stock-video/science-technology/me1651289-electric-background-abstract-animation-hd-a0120-poster.jpg"),
-		PLUTON(1.0,ESCALA_ORBITA_SATELITE * 0.07 , ESCALA_ORBITA_SATELITE*0.07, 1.5, "http://outletminero.org/content/images/2016/02/TUBOS-DE-COBRE.jpg");
+		PLUTON(1.0,  ESCALA_ORBITA_SATELITE * 0.04, -ESCALA_ORBITA_SATELITE*0.04, 1, "http://outletminero.org/content/images/2016/02/TUBOS-DE-COBRE.jpg");
 		;
 
 		private final double diametroEcuatorial;

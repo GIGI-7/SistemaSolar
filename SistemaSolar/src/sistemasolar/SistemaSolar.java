@@ -23,6 +23,10 @@ import javafx.scene.layout.BackgroundSize;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import java.io.File;
+import javafx.scene.layout.StackPane;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.paint.PhongMaterial;
+
 /**
  * Simulación del sistema solar utilizando JavaFX
 	 * https://docs.oracle.com/javase/8/javafx/api/index.html
@@ -114,7 +118,6 @@ public class SistemaSolar extends Application {
 		pluton = new Satelite (Satelite.DatosSatelite.PLUTON , sol);
 
 
-
 	}
 
 	/**
@@ -128,10 +131,19 @@ public class SistemaSolar extends Application {
 		sol.getNodo().setLayoutX(getSolCentroX() - RADIO_SOL);
 		sol.getNodo().setLayoutY(getSolCentroY() - RADIO_SOL);
 		root.getChildren().add(sol.getNodo());
-		String fondo = "https://zennovember.files.wordpress.com/2015/08/tumblr-background-renaissance-blue-backgrounds-437194937.jpg";
+		String fondo = "https://wallpapercave.com/wp/pEeUsp1.jpg";
 		root.setStyle("-fx-background-image: url('" + fondo + "'); " +
 			      "-fx-background-position: center center; " +
 			      "-fx-background-repeat: stretch;" );
+
+		String fake = "http://i.imgur.com/jh4hXTK.gif";
+		Image realNo = new Image(fake);
+		Rectangle rekt = new Rectangle(200, 200);
+		rekt.setFill(new ImagePattern(realNo, 0, 0, 1, 1, true));
+
+		root.getChildren().add(rekt);
+
+
 		Scene scene = new Scene(root, ANCHO_VENTANA_INICIAL, ALTO_VENTANA_INICIAL);
  		return scene;
 	}
@@ -149,7 +161,7 @@ public class SistemaSolar extends Application {
 		MediaPlayer player = new MediaPlayer(media);
 		player.play();
 
-		primaryStage.setTitle("Sistema Solar :)");
+		primaryStage.setTitle("Mira ese cumbion :)");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 
